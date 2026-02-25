@@ -1,5 +1,4 @@
 package buildmaven;
-
 import java.awt.AWTException;
 import java.awt.Desktop.Action;
 import java.awt.KeyEventDispatcher;
@@ -7,7 +6,6 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -29,13 +27,14 @@ public class basic {
 		if(brio.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-	
 		}
 		else if(brio.equalsIgnoreCase("edge")) {
 				WebDriverManager.chromedriver().setup();
 				driver = new EdgeDriver();
-	
 	}
+	}
+	public static void mmmmm() {
+		
 	}
 		public static void url(String url) {
 			driver.get(url);
